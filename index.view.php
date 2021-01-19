@@ -7,8 +7,12 @@
 </head>
 <body>
     <h1>
+    <ul>
         <?php
-            echo $greetings;
+            foreach($names as $name)
+            {
+                echo "<li>$name</li>";
+            }
 
         ?>
     

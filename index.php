@@ -3,7 +3,4 @@
 $names = [
     'ALi', 'Ahsan', 'Ahmed'
 ];
-foreach($names as $name)
-{
-    echo $name . ",";
-}
+require 'index.view.php';
