@@ -1,3 +1,4 @@
 <?php
-$greetings = "Shehroze";
-echo 'Hello ' . $greetings;
+$greetings = "Hello";
+$name = "Shehroze";
+echo "{$greetings} , {$name}";
