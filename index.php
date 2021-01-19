@@ -5,5 +5,5 @@ $names = [
 ];
 foreach($names as $name)
 {
-    echo $name . " ,";
+    echo $name . ",";
 }
