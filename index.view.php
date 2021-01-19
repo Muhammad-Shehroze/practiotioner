@@ -6,14 +6,11 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>
     <ul>
-        <?php foreach ($names as $name) : ?>
-                <li><?= $name; ?></li>
+        <?php foreach ($person as $key => $feature) : ?>
+                <li><strong><?=$key?></strong><?= $feature; ?></li>
         <?php endforeach; ?>    
 
     </ul>
-    
-    </h1>
 </body>
 </html>
