@@ -5,4 +5,7 @@ $person = [
     'age' => '23',
     'color'=> 'Brown'
 ];
-require 'index.view.php';
+$person['arrress'] = "Rawalpindi/Islamabad";
+echo "<pre>";
+    var_dump($person);
+echo "</pre>";
