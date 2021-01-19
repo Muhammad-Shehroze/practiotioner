@@ -9,7 +9,7 @@
     <h1>
     <ul>
         <?php
-            foreach($names as $name)
+            foreach ($names as $name)
             {
                 echo "<li>$name</li>";
             }
