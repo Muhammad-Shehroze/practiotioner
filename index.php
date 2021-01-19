@@ -9,7 +9,7 @@
     <h1>
         <?php
             $name = $_GET['name'];
-            echo $name;
+            echo htmlspecialchars($name);
 
         ?>
     
