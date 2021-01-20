@@ -4,7 +4,9 @@ $person = [
     'name' => 'ALi', 
     'age' => '23',
     'color'=> 'Brown',
-    'married' => false
+    'married' => true
 ];
 require 'index.view.php';
-echo $person['married'] ? "yes Married" : "Not Married";
+if ( $person['married']) {
+    echo 'Married ' . '<span class = "icon">&#9989</span>';
+}
