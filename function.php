@@ -1,8 +1,14 @@
 <?php
-function check_age($check) {
-    if ($check > 21)
-        return true;
-    else
-        return false;  
+function connectToDb() {
+    try {
+        return new PDO('mysql:host=localhost;dbname=practitioner', 'root', '');
+    } catch (PDOException $e) {
+        die($e->getMessage());
+    }  
+}
+function fetchAllTasks($pdo) {
+    $statement = $pdo->prepare('select * from todos');
+    $statement->execute();
+    return $statement->fetchAll(PDO::FETCH_CLASS, 'TASK');
 }
 ?>
