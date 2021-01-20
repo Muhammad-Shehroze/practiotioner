@@ -1,16 +1,18 @@
 <?php
 include 'function.php';
-$person = [
-    'name' => 'ALi', 
-    'age' => '20',
-    'color'=> 'Brown',
-    'married' => true
-];
-if (check_age($person['age'])) 
-    echo 'Come in Tou are Older Enough';
-else 
-    echo 'Sorry You are Not Older';
-require 'index.view.php';
-if ( $person['married']) {
-    echo 'Married ' . '<span class = "icon">&#9989</span>';
+class Task {
+    public $description;
+    public $completed = "false";
+    public function __construct($description)
+    {
+        $this->description = $description;
+    }
+
 }
+
+$tasks = [
+    new Task("This is a new Task"),
+    new Task("This is a second Task"),
+    new Task("This is a third Task")
+];
+include 'index.view.php';
