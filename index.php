@@ -3,9 +3,8 @@
 $person = [
     'name' => 'ALi', 
     'age' => '23',
-    'color'=> 'Brown'
+    'color'=> 'Brown',
+    'married' => false
 ];
-$person['arrress'] = "Rawalpindi/Islamabad";
-echo "<pre>";
-    var_dump($person);
-echo "</pre>";
+require 'index.view.php';
+echo $person['married'] ? "yes Married" : "Not Married";
