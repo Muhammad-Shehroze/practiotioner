@@ -1,7 +1,7 @@
 <?php
 $routerr->define([
-    '' => 'controllers/index.php',
-    'about' => 'controllers/about.php',
-    'culture' => 'controllers/culture.php',
-    'contact' => 'controllers/contact.php'
+    'practiotioner15/index.php' => 'controllers/index.php',
+    'practiotioner15/about' => 'controllers/about.php',
+    'practiotioner15/culture' => 'controllers/culture.php',
+    'practiotioner15/contact' => 'controllers/contact.php'
 ]);

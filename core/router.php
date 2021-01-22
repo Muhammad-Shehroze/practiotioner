@@ -9,13 +9,14 @@ class router
     }
     public function direct($uri)
     {
-    
+        if($uri == 'practiotioner15'){
+            header("Location: index.php", true, 301);
+        }
+
         if (array_key_exists($uri, $this->routes)) 
         {
-            
             return $this->routes[$uri];
         }
-        print($uri);
         throw new Exception("No route defined for this uri Please check your URI");       
     }
 }

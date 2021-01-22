@@ -1,1 +1,4 @@
-ErrorDocument 404 http://localhost/practiotioner15
+ErrorDocument 404 http://localhost/practiotioner15/index.php
+
+ReWriteEngine On
+RewriteRule ^([^/\.]+)?$ /practiotioner15/index.php [L]

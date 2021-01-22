@@ -8,8 +8,9 @@
 <body>
     <nav>
         <ul>
-            <li><a href="about.php">about us</a></li>
-            <li><a href="contact.php">contact us</a></li>
+            <li><a href="about">about us</a></li>
+            <li><a href="contact">contact us</a></li>
+            <li><a href="culture">Our Culture</a></li>
         </ul>
     </nav>
     <ul>
